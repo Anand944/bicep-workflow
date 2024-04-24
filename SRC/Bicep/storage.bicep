@@ -66,7 +66,7 @@ param OSVersion string = '2016-datacenter-smalldisk-g2'
 param vmSize string = 'Standard_B1ms'
 
 @description('Location for all resources.')
-param location string = resourceGroup().location
+param location string = 'eastus'
 
 @description('Name of the virtual machine.')
 param vmName string = 'testpocvm01'
@@ -163,6 +163,7 @@ resource vm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
           storageAccountType: 'StandardSSD_LRS'
         }
       }
+      
       dataDisks: [
         {
           diskSizeGB: 1023

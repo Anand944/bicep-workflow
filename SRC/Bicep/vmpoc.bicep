@@ -59,7 +59,7 @@ param publicIpSku string = 'Basic'
   '2022-datacenter-g2'
   '2022-datacenter-smalldisk-g2'
 ])
-param OSVersion string = '2016-datacenter-smalldisk-g2'
+param OSVersion string = '2019-datacenter-core-smalldisk-g2'
 
 
 @description('Size of the virtual machine.')
@@ -151,12 +151,12 @@ resource vm 'Microsoft.Compute/virtualMachines@2022-03-01' = {
       adminPassword: adminPassword
     }
     storageProfile: {
-      imageReference: {
-        publisher: 'MicrosoftWindowsServer'
-        offer: 'WindowsServer'
-        sku: OSVersion
-        version: 'latest'
-      }
+        imageReference: {
+          publisher: 'MicrosoftWindowsServer'
+          offer: 'WindowsServer'
+          sku: OSVersion
+          version: 'latest'
+        }
       osDisk: {
         createOption: 'FromImage'
         managedDisk: {

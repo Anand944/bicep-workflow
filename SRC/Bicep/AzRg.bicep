@@ -4,7 +4,7 @@ param location string = 'eastus'
 targetScope = 'subscription'
 
 resource azureResourceGroup 'Microsoft.Resources/resourceGroups@2023-07-01'={
-  name:'testrg-02'
+  name:'testrg-03'
   location: location
 
 }

@@ -66,7 +66,7 @@ param OSVersion string = '2016-datacenter-smalldisk-g2'
 param vmSize string = 'Standard_B1ms'
 
 @description('Location for all resources.')
-param location string = 'eastus'
+param location string = 'eastus2'
 
 @description('Name of the virtual machine.')
 param vmName string = 'testpocvm01'

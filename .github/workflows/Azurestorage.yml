@@ -32,7 +32,7 @@ jobs:
       - name: az bicep deploy
         working-directory: '${{github.workspace}}/SRC/Bicep'
         run:
-           az deployment group --what-if --resource-group dev-rg-demogroup --template-ile ./storage.bicep
+           az deployment group create --what-if --resource-group dev-rg-demogroup --template-ile ./storage.bicep
   deploy:
     name: 'bicep deploy'
     environment: dev

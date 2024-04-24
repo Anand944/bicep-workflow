@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Azure bicep
+name: Azure-bicep-web
 
 # Controls when the workflow will run
 on:
@@ -32,7 +32,7 @@ jobs:
       - name: az bicep deploy
         working-directory: '${{github.workspace}}/SRC/Bicep'
         run:
-           az deployment group what-if --template-file ./webapp.bicep --resource-group testrg-02
+           az deployment group what-if --template-file ./webapp.bicep --resource-group testrg-04
   deploy:
     name: 'bicep deploy'
     environment: dev
@@ -53,4 +53,4 @@ jobs:
       - name: az bicep deploy
         working-directory: '${{github.workspace}}/SRC/Bicep'
         run:
-           az deployment group create --template-file ./webapp.bicep --resource-group testrg-02
+           az deployment group create --template-file ./webapp.bicep --resource-group testrg-04

@@ -59,7 +59,7 @@ param publicIpSku string = 'Basic'
   '2022-datacenter-g2'
   '2022-datacenter-smalldisk-g2'
 ])
-param OSVersion string = '2019-datacenter-core-smalldisk-g2'
+param OSVersion string = '2016-datacenter-smalldisk-g2'
 
 
 @description('Size of the virtual machine.')

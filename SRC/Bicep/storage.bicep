@@ -14,7 +14,7 @@ param adminUsername string = 'adminuser'
 @description('Password for the Virtual Machine.')
 @minLength(12)
 @secure()//use for should not be visible in plain text in terminal
-param adminPassword string 
+param adminPassword string = 'Sidduanand$$4321'
 
 @description('Name for the Public IP used to access the Virtual Machine.')
 param publicIpName string = 'myPublicIP'

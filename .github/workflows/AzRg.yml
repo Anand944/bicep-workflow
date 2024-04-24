@@ -53,4 +53,4 @@ jobs:
       - name: az bicep deploy
         working-directory: '${{github.workspace}}/SRC/Bicep'
         run:
-           az deployment group create --resource-group dev-rg-demogroup02 --template-file ./vmpoc.bicep
+           az deployment sub create -l eastus -f ./AzRg.bicep

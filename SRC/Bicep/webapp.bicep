@@ -2,7 +2,7 @@ param location string = 'eastus'
 param AppserviceplanName string = 'testappservr02'
 param sku string = 'F1'
 param webappName string = 'testweb08'
-param linuxFxVersion string = 'DOTNETCORE|6.0'
+param windowsFxVersion string = 'DOTNETCORE|6.0'
 param size string = 'F1'
 param tier string = 'Free'
 
@@ -12,7 +12,7 @@ resource Appserviceplan 'Microsoft.Web/serverfarms@2022-09-01'={
   properties:{
     reserved: true
   }
-  kind: 'linux'
+  kind: 'windows'
   sku: {
     name: sku
     size: size
@@ -26,7 +26,7 @@ resource webapps 'Microsoft.Web/sites@2022-09-01'={
   properties:{
     serverFarmId: Appserviceplan.id
     siteConfig: {
-      linuxFxVersion: linuxFxVersion
+      windowsFxVersion: windowsFxVersion
     }
     clientCertEnabled:false
     httpsOnly:true

@@ -1,5 +1,5 @@
 param location string = 'eastus'
-param AppserviceplanName string = 'testappservr02'
+param AppserviceplanName string = 'testappservr01'
 param sku string = 'F1'
 param webappName string = 'testweb18'
 param windowsFxVersion string = 'DOTNETCORE|6.0'

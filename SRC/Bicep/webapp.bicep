@@ -1,7 +1,7 @@
 param location string = 'eastus'
 param AppserviceplanName string = 'testappservr02'
 param sku string = 'F1'
-param webappName string = 'testweb08'
+param webappName string = 'testweb18'
 param windowsFxVersion string = 'DOTNETCORE|6.0'
 param size string = 'F1'
 param tier string = 'Free'

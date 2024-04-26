@@ -17,7 +17,7 @@ param adminUsername string = 'adminuser'
 param adminPassword string = 'Sidduanand$$4321'
 
 @description('Name for the Public IP used to access the Virtual Machine.')
-param publicIpName string = 'myPublicIP'
+param publicIpName string = 'myPublicIP'//jjj
 
 @description('Allocation method for the Public IP used to access the Virtual Machine.')
 @allowed([
